@@ -1373,9 +1373,9 @@ local function luau_load(module, env, luau_settings)
 				end
 
 				if proto.lineinfoenabled then
-					return error(string_format("proohio VM Error { Name: %s Line: %s PC: %s Opcode: %s }: %s", proto.debugname, proto.instructionlineinfo[debugging.pc], debugging.pc, debugging.name, message), 0)
+					return error(string_format("VernusX VM Error { Name: %s Line: %s PC: %s Opcode: %s }: %s", proto.debugname, proto.instructionlineinfo[debugging.pc], debugging.pc, debugging.name, message), 0)
 				else 
-					return error(string_format("proohio VM Error { Name: %s PC: %s Opcode: %s }: %s", proto.debugname, debugging.pc, debugging.name, message), 0)
+					return error(string_format("VernusX VM Error { Name: %s PC: %s Opcode: %s }: %s", proto.debugname, debugging.pc, debugging.name, message), 0)
 				end
 			end
 		end
